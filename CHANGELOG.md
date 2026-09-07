@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.5.0] — Traffic Analysis
+
+### Added
+- Fully written Module 13 (Traffic Analysis): capture vs. display filters,
+  `tcpdump` and Wireshark/`tshark` usage, plaintext vs. encrypted traffic
+  visibility
+- `tcpdump`/Wireshark/`tshark` commands documented from official
+  documentation, explicitly flagged as not live-tested since the build
+  sandbox has no packet-capture tools installed and no network access
+  (checked directly: `tcpdump`, `tshark`, and Python's `scapy`/`dpkt`
+  libraries are all absent)
+
+### Changed
+- README status table, ROADMAP, and TEST_LOG updated to reflect Module 13
+  and the next priority (Modules 14–20)
+
 ## [0.4.0] — Network Enumeration
 
 ### Added

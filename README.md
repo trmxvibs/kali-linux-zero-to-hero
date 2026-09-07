@@ -19,9 +19,10 @@ This repository is a **real, working foundation**, not a finished
 
 - **Fully written**, following the course's complete lesson format (concepts,
   labs, commands, troubleshooting, security notes, exercises, challenge):
-  Modules **00–12, 21, 22, 26** — i.e. the entire **Linux Fundamentals**
+  Modules **00–13, 21, 22, 26** — i.e. the entire **Linux Fundamentals**
   track (00–07), **Networking** (08–09), **Security Fundamentals** (10),
-  **Reconnaissance & Enumeration** (11–12), plus Automation and Lab-Building
+  **Reconnaissance, Enumeration & Traffic Analysis** (11–13), plus
+  Automation and Lab-Building
 - **Scaffolded** (README + checkpoint structure in place, lesson files are
   placeholders): the remaining modules — tracked in [ROADMAP.md](ROADMAP.md)
 - **No video content is planned for the near term.** This is a deliberate,
@@ -65,7 +66,7 @@ Start at Module 00 regardless of level — it's short, and it sets the ground ru
 | 10 | [Security Fundamentals](modules/10-security-fundamentals/README.md) | ✅ Complete |
 | 11 | [Reconnaissance Concepts](modules/11-reconnaissance-concepts/README.md) | ✅ Complete |
 | 12 | [Network Enumeration](modules/12-network-enumeration/README.md) | ✅ Complete |
-| 13 | [Traffic Analysis](modules/13-traffic-analysis/README.md) | 🚧 Scaffold |
+| 13 | [Traffic Analysis](modules/13-traffic-analysis/README.md) | ✅ Complete |
 | 14 | [Web Security Fundamentals](modules/14-web-security-fundamentals/README.md) | 🚧 Scaffold |
 | 15 | [Vulnerability Assessment](modules/15-vulnerability-assessment/README.md) | 🚧 Scaffold |
 | 16 | [Authentication & Password Security](modules/16-authentication-and-passwords/README.md) | 🚧 Scaffold |

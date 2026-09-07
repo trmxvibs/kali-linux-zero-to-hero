@@ -1,14 +1,6 @@
-# Traffic Analysis — Exercises
+# Exercises — Module 13
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
-
-## Learning Objectives
-
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
-
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+1. Explain, in your own words, the difference between a capture filter and a display filter, and why the distinction matters if you're not yet sure what you'll need to look at.
+2. Capture your own traffic while visiting one HTTP site and one HTTPS site. Compare what's readable in each capture and explain why they differ.
+3. Using `tshark -T fields`, extract just the source and destination IPs from a capture file into a clean list.
+4. Explain why capturing traffic on a shared network you don't administer (e.g., a coffee shop's public Wi-Fi) would violate this course's authorization rules from Module 00, even if you're "only looking," not modifying anything.

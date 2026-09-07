@@ -157,6 +157,15 @@ Kali-specific tools (`nmap`, Metasploit, Wireshark, etc.) installed.
   live-tested — see NOT TESTED section below; the build sandbox has no
   Metasploitable VM and no network access.
 
+### Module 13 — Traffic Analysis
+- Actively checked for any usable packet-capture capability in this
+  sandbox before writing the module: confirmed `tcpdump` and `tshark` are
+  both absent (`which` returns nothing), and confirmed Python's `scapy`
+  and `dpkt` libraries are not installed either (`pip show` and direct
+  import both fail). This negative result is itself a tested, verified
+  fact, not an assumption — it's why the entire module is written from
+  documentation rather than partially faked with a workaround.
+
 ## NOT TESTED — REQUIRES A REAL ENVIRONMENT
 
 - **Any command requiring `ip`, `ss`, `ping`, `dig`, or internet-facing
@@ -176,6 +185,12 @@ Kali-specific tools (`nmap`, Metasploit, Wireshark, etc.) installed.
   build. This is flagged explicitly at the top of Module 07's
   `04-commands.md`. Verify against a real Kali VM before treating this
   module as fully tested.
+- **`tcpdump`, Wireshark, and `tshark` (Module 13)** — none of these are
+  installed in this sandbox (confirmed directly, not assumed — see the
+  TESTED section above), and there is no network traffic to capture even
+  if they were. Module 13's commands are standard, well-documented
+  `tcpdump`/Wireshark syntax, but were **not live-executed**. Verify
+  against a real Kali VM.
 - **Nmap and any Kali-specific tool** (Module 11's `04-commands.md` and
   Module 12's `smbclient`/`enum4linux`/`showmount`/NSE scripts,
   including the exact scan output shown) — none of these tools are

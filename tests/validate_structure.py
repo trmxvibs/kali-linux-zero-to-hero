@@ -48,6 +48,7 @@ COMPLETE_MODULES = {
     "10-security-fundamentals",
     "11-reconnaissance-concepts",
     "12-network-enumeration",
+    "13-traffic-analysis",
     "21-automation-with-bash",
     "22-security-automation-with-python",
     "26-building-your-own-lab",
