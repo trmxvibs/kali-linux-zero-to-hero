@@ -1,14 +1,9 @@
-# Authentication & Password Security — Troubleshooting
+# Troubleshooting — Module 16
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
+**Demo 2's salts/hashes look different every time I run it** — this is correct and expected; `os.urandom()` generates a genuinely new random salt on every run, which is exactly the point (a fresh, unique salt per user/password).
 
-## Learning Objectives
+**Confused why Demo 3 "cracking" a password doesn't mean SHA-256 is broken** — see the clarification in `03-practical-lab.md` Step 3: dictionary/wordlist attacks only succeed against passwords that are actually in the list being tried; SHA-256 remains cryptographically one-way (you can't reverse a hash back to its input directly) — the vulnerability being demonstrated is about *speed enabling attackers to try huge lists quickly*, not about reversing the hash function itself.
 
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
+**`john`/`hashcat` not installed** — both are standard Kali tools; if missing, `sudo apt install john hashcat`.
 
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+**`pip install bcrypt` fails** — ensure you have a working internet connection and appropriate build tools (`sudo apt install python3-dev build-essential` if a compiled dependency fails); this wasn't testable in this course's own build sandbox for the same reason (see `tests/TEST_LOG.md`).

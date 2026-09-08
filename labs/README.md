@@ -7,6 +7,9 @@ step-by-step lab instructions themselves.
 | Folder | Used by |
 |---|---|
 | `log-analysis/sample.log` | Module 21 (`log_analyzer.sh`), Module 22 (`log_parser.py`) |
+| `web-security/sqli_demo.py` | Module 14 — runnable SQL injection vs. parameterized-query demonstration |
+| `vulnerability-assessment/vuln_lookup.py` + `known_vulns.json` | Module 15 — local CVE/CWE lookup workflow demonstration |
+| `password-security/hashing_demo.py` | Module 16 — salting and fast-hash brute-force demonstration |
 
 All sample data in this folder is **fabricated** — fictional hostnames and
 RFC 5737 documentation IP ranges (`203.0.113.0/24`, `198.51.100.0/24`,

@@ -166,6 +166,60 @@ Kali-specific tools (`nmap`, Metasploit, Wireshark, etc.) installed.
   fact, not an assumption — it's why the entire module is written from
   documentation rather than partially faked with a workaround.
 
+### Module 14 — Web Security Fundamentals
+- `python3 -m http.server` and `curl -I`/`curl -v` against it were both
+  executed; the exact header output shown in the lesson (`Server:
+  SimpleHTTP/0.6 Python/3.12.3`, etc.) was captured live, not invented.
+- `labs/web-security/sqli_demo.py` was written, compiled, and run multiple
+  times. Confirmed: a normal login succeeds; the injection payload
+  `admin' -- ` bypasses the vulnerable string-concatenation version and
+  returns the admin row despite a wrong password; the identical payload
+  against the parameterized (safe) version returns zero rows.
+- **A real mistake was caught by testing, not assumed correct:** an
+  initial draft of the lab claimed the payload `' OR '1'='1` (without a
+  trailing comment) would return every row in the table. Running it
+  actually returned **zero rows**, because SQL's `AND` operator binds
+  tighter than `OR`, making the real resulting condition
+  `username='' OR ('1'='1' AND password='anything')` — false for every
+  row since no real password equals the literal string `anything`. A
+  second payload, `' OR '1'='1' -- ` (which comments out the password
+  check entirely), was then tested and confirmed to correctly return
+  every row. The lab was rewritten to walk through this exact discovery
+  rather than silently fixing the mistake and hiding that it happened.
+
+### Module 15 — Vulnerability Assessment
+- `labs/vulnerability-assessment/vuln_lookup.py` and its `known_vulns.json`
+  dataset were written, compiled, and run: a valid lookup, `--list` mode,
+  an unknown-service lookup (confirmed to return a clear "not found"
+  message and exit code 1, not a false "safe" implication), and no-argument
+  invocation (confirmed to print help and exit code 2) were all tested.
+- The vsftpd 2.3.4 / CVE-2011-2523 worked example was fact-checked via web
+  search against multiple independent sources (GitHub PoC repositories,
+  a Twingate CVE report, a Medium write-up) before being written into the
+  lesson, confirming: the CVE ID, the CWE-78 classification, the port 6200
+  backdoor mechanism, and the general nature of the vulnerability.
+
+### Module 16 — Authentication & Password Security
+- `labs/password-security/hashing_demo.py` was written, compiled, and run.
+  Confirmed: identical passwords produce identical SHA-256 hashes without
+  a salt; the same password with two different random salts produces two
+  different hashes; a 5-word dictionary attack against a known weak
+  password succeeds in a fraction of a millisecond.
+- The lesson's "predict what happens with a random 20-character password"
+  exercise was tested directly before being written up: a
+  `secrets.token_hex(10)`-generated password was confirmed **not** found
+  by the same 5-word wordlist, and this result was used to add an explicit
+  clarification that dictionary attacks only succeed against passwords
+  actually present in the list — not a general statement about SHA-256
+  being "broken."
+- The Module 16 challenge's claimed numbers (20 distinct hashes without
+  salt vs. 1,000 distinct hashes with salt, for 1,000 simulated users
+  drawn from 20 common passwords) were verified by directly running the
+  described logic before being included as a challenge.
+- `bcrypt` and `argon2` Python libraries were checked and confirmed absent
+  from this sandbox — flagged explicitly in the lesson rather than
+  presented with fabricated example output.
+
 ## NOT TESTED — REQUIRES A REAL ENVIRONMENT
 
 - **Any command requiring `ip`, `ss`, `ping`, `dig`, or internet-facing
@@ -185,6 +239,12 @@ Kali-specific tools (`nmap`, Metasploit, Wireshark, etc.) installed.
   build. This is flagged explicitly at the top of Module 07's
   `04-commands.md`. Verify against a real Kali VM before treating this
   module as fully tested.
+- **`john` (John the Ripper), `hashcat`, `bcrypt`, and `argon2` (Module 16)**
+  — none are installed in this sandbox (confirmed directly: `pip show
+  bcrypt` and a direct `import bcrypt`/`import dpkt`-style check both
+  failed). Module 16's core teaching claims (fast-hash brute-forcing,
+  salting) were fully demonstrated instead using Python's built-in
+  `hashlib`, which required no external tools and was fully tested.
 - **`tcpdump`, Wireshark, and `tshark` (Module 13)** — none of these are
   installed in this sandbox (confirmed directly, not assumed — see the
   TESTED section above), and there is no network traffic to capture even

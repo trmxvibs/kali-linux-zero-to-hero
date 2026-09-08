@@ -1,14 +1,9 @@
-# Web Security Fundamentals — Troubleshooting
+# Troubleshooting — Module 14
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
+**`python3 -m http.server` says "Address already in use"** — another process is already using that port; pick a different port number (`python3 -m http.server 8124`) or find and stop the other process (Module 05's `ps`/`kill`).
 
-## Learning Objectives
+**SQL injection payload "doesn't work" as expected** — read `03-practical-lab.md`'s Part 3 carefully: SQL syntax details (like operator precedence and comment markers) matter enormously, and a payload that looks right can silently fail for a subtle reason. Print the exact constructed query (as the demo script does) to see precisely what's being sent.
 
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
+**`curl -I` shows no `Server` header** — some servers deliberately omit or genericize this header as a hardening measure (Module 17) — this is a defender doing exactly what this lesson suggests, not a broken command.
 
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+**Following along in a browser instead of `curl` and not seeing headers** — use the browser's Developer Tools (F12) → Network tab, then click any request to see its full headers, which `curl -I` only shows in the terminal.

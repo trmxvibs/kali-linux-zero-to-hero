@@ -1,5 +1,31 @@
 # Changelog
 
+## [0.6.0] — Web Security, Vulnerability Assessment & Password Security
+
+### Added
+- Fully written Module 14 (Web Security Fundamentals): HTTP request/response
+  anatomy, cookies/sessions, and a real, fully-tested SQL injection
+  demonstration (`labs/web-security/sqli_demo.py`) showing both the
+  vulnerable string-concatenation pattern and the parameterized-query fix
+  actually working against each other
+- Fully written Module 15 (Vulnerability Assessment): CVE/CWE vocabulary,
+  a real worked example (vsftpd 2.3.4 / CVE-2011-2523, fact-checked via
+  web search against multiple sources), and a runnable local vulnerability
+  lookup tool (`labs/vulnerability-assessment/vuln_lookup.py`)
+- Fully written Module 16 (Authentication & Password Security): why fast
+  hashes are unsuitable for password storage, salting, and a fully-tested
+  demonstration script (`labs/password-security/hashing_demo.py`) proving
+  each claim with real, executed code rather than assertion
+- A genuine testing catch in Module 14: an initial lab draft assumed the
+  payload `' OR '1'='1` would dump an entire table; actually running it
+  revealed SQL operator precedence (`AND` binds tighter than `OR`) made
+  that assumption wrong, and the lab was rewritten around the corrected,
+  tested behavior rather than the original (incorrect) assumption
+
+### Changed
+- README status table, ROADMAP, and TEST_LOG updated to reflect Modules
+  14–16 and the next priority (Modules 17–20)
+
 ## [0.5.0] — Traffic Analysis
 
 ### Added

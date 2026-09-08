@@ -1,14 +1,6 @@
-# Authentication & Password Security — Exercises
+# Exercises — Module 16
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
-
-## Learning Objectives
-
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
-
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+1. Run `hashing_demo.py` three times and confirm Demo 2's salts are different every time, while Demo 1's hashes are identical every time. Explain why in one sentence each.
+2. Explain, precisely, why "the attacker cracked a SHA-256 hash with a wordlist" does not mean "SHA-256 is broken as a hash function."
+3. List the three authentication factor categories from `01-concepts.md` and give one example of each that ISN'T already used in the lesson.
+4. Explain why two different passwords are not multi-factor authentication, even if a system requires both.
