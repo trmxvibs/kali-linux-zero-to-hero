@@ -1,14 +1,6 @@
-# Digital Forensics Fundamentals — Exercises
+# Exercises — Module 18
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
-
-## Learning Objectives
-
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
-
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+1. Complete Lab 18 and confirm your before/after hashes match exactly.
+2. Rename any file on your own system to have a different extension (e.g., rename a `.sh` script to `.jpg`), then confirm `file` reports the actual type, not the extension.
+3. Run `strings` on any compiled binary in `/usr/bin` (e.g., `/usr/bin/ls`) and identify at least one embedded path, one library name, and one error message string.
+4. Explain why "the timestamps say this file was created after the attack" is not, by itself, conclusive evidence — and what additional corroboration you'd need before treating it as fact in a report.

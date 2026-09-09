@@ -1,14 +1,9 @@
-# Wireless Security Concepts — Troubleshooting
+# Troubleshooting — Module 19
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
+**`airmon-ng start wlan0` says "no such device"** — your VM may not have passed through the wireless interface; check the hypervisor's USB device passthrough settings for the wireless adapter.
 
-## Learning Objectives
+**`airodump-ng` shows no networks** — confirm you're actually in monitor mode (`iw dev` should show `type monitor`), and that you're not filtering to a specific channel/BSSID too narrowly before confirming your target's actual channel.
 
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
+**"Handshake" never appears in airodump-ng** — wait longer (a reconnect needs to happen), or force a device to reconnect (in your own lab, you can disconnect and reconnect a device manually).
 
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+**`aircrack-ng` says "0 handshakes"** — the capture file didn't capture a full 4-way handshake; the airodump-ng line showing "WPA handshake: ..." must appear before you can run aircrack-ng against the capture.

@@ -1,0 +1,5 @@
+Sep 08 10:01:05 hostname sshd[1001]: Failed password for invalid user admin from 203.0.113.5 port 51422
+Sep 08 10:01:07 hostname sshd[1002]: Failed password for root from 203.0.113.5 port 51424
+Sep 08 10:02:00 hostname sshd[1003]: Accepted password for kali from 192.0.2.10 port 22001
+Sep 08 10:03:15 hostname sshd[1004]: session opened for user kali by (uid=0)
+Sep 08 10:04:00 hostname sudo[1005]: kali : TTY=pts/0 ; COMMAND=/bin/bash

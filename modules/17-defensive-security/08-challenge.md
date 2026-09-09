@@ -1,14 +1,9 @@
-# Defensive Security — Challenge
+# Challenge — Module 17
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
+Building on Module 21 (Bash automation), write `service_audit.sh` (first sketched in Module 07's challenge):
+- Accepts a list of expected-enabled services as arguments
+- For each, reports whether it is enabled AND active (both states, not just one)
+- Lists any *other* currently-running services not in your expected list, flagged as "UNEXPECTED — investigate"
+- Saves the full output to a timestamped report file
 
-## Learning Objectives
-
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
-
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+Test it against your own Kali VM and document what, if anything, it flagged as unexpected.

@@ -1,14 +1,6 @@
-# Defensive Security — Exercises
+# Exercises — Module 17
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
-
-## Learning Objectives
-
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
-
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+1. Complete Lab 17 and write the required one-paragraph security posture note.
+2. Explain, using Module 10's "attack surface" concept, why disabling an unused service is a more structurally sound control than just applying a firewall rule to block its port.
+3. Run `log_analyzer.sh` against `/var/log/auth.log` and against `/var/log/syslog` — compare what each reveals.
+4. Look up the CIS Benchmark for Debian/Ubuntu/Kali (free PDF available at cisecurity.org) and identify one specific recommendation you've already implemented by following this course, and one you haven't yet.

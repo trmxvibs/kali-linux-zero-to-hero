@@ -1,5 +1,33 @@
 # Changelog
 
+## [0.7.0] — Defensive Security, Forensics, Wireless & Exploitation
+
+### Added
+- Fully written Module 17 (Defensive Security): attacker-view →
+  defender-action framework, Linux hardening habits priority-ordered,
+  basic incident-response workflow
+- Fully written Module 18 (Digital Forensics Fundamentals): integrity-first
+  principle, `file` magic-byte detection, timestamp analysis, `strings`
+  extraction — all commands actually executed in the build sandbox; a
+  sample evidence dataset (`labs/digital-forensics/sample-evidence/`)
+  was built and every lab step run against it, including the `binary_stub`
+  which was rebuilt twice after an initial implementation (escaped null
+  bytes) produced one-line `strings` output; the corrected Python-built
+  version correctly produces multi-line output
+- Fully written Module 19 (Wireless Security Concepts): WEP/WPA2/WPA3
+  protocol history and weakness analysis, monitor mode, offline dictionary
+  attack mechanics — documented from official 802.11 and aircrack-ng
+  documentation; not live-tested (no wireless hardware in build sandbox)
+- Fully written Module 20 (Exploitation Concepts in Safe Labs): Metasploit
+  methodology, vulnerability→exploitable→impact framework, Metasploitable
+  2 lab workflow — documented from official Metasploit documentation; not
+  live-tested (no Metasploit/Metasploitable in build sandbox)
+
+### Changed
+- README status table: Modules 17–20 now marked Complete
+- ROADMAP updated: entire core technical curriculum (00–22, 26) now written
+- TEST_LOG.md updated with Module 17–20 testing details
+
 ## [0.6.0] — Web Security, Vulnerability Assessment & Password Security
 
 ### Added

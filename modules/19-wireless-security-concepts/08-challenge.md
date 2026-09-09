@@ -1,14 +1,8 @@
-# Wireless Security Concepts — Challenge
+# Challenge — Module 19
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
+On your own wireless network:
+- Use airodump-ng to identify which devices (by MAC address) are connected to your AP at any moment
+- Explain the privacy implications of this fact being observable to anyone within wireless range
+- Document, in writing, one concrete configuration change to your own home Wi-Fi setup that this module motivated — and why
 
-## Learning Objectives
-
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
-
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+This challenge is intentionally reflective rather than technical: the goal is connecting the theory to a real, personal security decision.

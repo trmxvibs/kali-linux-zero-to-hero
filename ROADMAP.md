@@ -2,68 +2,45 @@
 
 ## Current State (this release)
 
-**Fully written modules:** 00–16, 21, 22, 26 — i.e. the complete **Linux
-Fundamentals** track (00–07), **Networking** (08–09), **Security
-Fundamentals** (10), and **Reconnaissance through Password Security**
-(11–16), plus Automation and Lab-Building. See `README.md` for the
-complete status table.
+**Fully written modules:** 00–22, 26 — the complete course from
+**Linux Fundamentals** (00–07) through **Networking** (08–09), **Security
+Fundamentals** (10), **Reconnaissance through Exploitation** (11–20),
+**Automation** (21–22), and **Lab-Building** (26). The entire core
+technical curriculum is now written. See `README.md` for the complete
+status table.
 
-**Scaffolded modules:** 17–20 and 23–29 have their `README.md` and
-standard file structure in place; lesson content is a placeholder pending
-contribution, following the format in `CONTRIBUTING.md`.
+**Remaining scaffolds:** Modules 23–25 (CTF Methodology, Vulnerability
+Research, Reporting) and 27–29 (Advanced Workflows, Final Projects, Career
+Guidance) — structures in place, content pending.
 
-**Tested:** every script in `scripts/bash/` and `scripts/python/`, plus
-the new `labs/web-security/sqli_demo.py`,
-`labs/vulnerability-assessment/vuln_lookup.py`, and
-`labs/password-security/hashing_demo.py` — all actually run, including a
-real gotcha caught by testing in Module 14's SQL injection lab (an
-operator-precedence nuance that made an initial payload assumption wrong,
-corrected after actually running it) — see `tests/TEST_LOG.md`. Notable
-exceptions requiring a real environment: Module 07's `systemctl`/`cron`,
-Module 09's `ip`/`ping`/`dig`, Module 12's SMB/NFS/NSE tools, Module 13's
-`tcpdump`/Wireshark, and Module 16's `john`/`hashcat`/`bcrypt` (none
-installed in the build sandbox) — all flagged clearly in their own
-lessons and in `tests/TEST_LOG.md`.
+**Tested:** see `tests/TEST_LOG.md`. Module 18's forensics commands
+(`file`, `strings`, `stat`, `sha256sum`) and the sample evidence dataset
+were fully live-tested. Notable not-live-tested areas: Module 07
+(`systemctl`/`cron`), Modules 08–09 (`ip`/`ping`/`dig`), Module 12
+(SMB/NFS/NSE), Module 13 (`tcpdump`/Wireshark), Module 16
+(`john`/`hashcat`/`bcrypt`), Module 19 (wireless hardware), Module 20
+(Metasploit/Metasploitable) — all flagged in their own lessons.
 
-**Video:** not planned for the near term — this is a deliberate current
-decision, not a gap. See `video/README.md`.
+**Video:** not planned for the near term. See `video/README.md`.
 
 ## Near-Term Priorities
 
-1. Complete Modules 17–20 (Defensive Security, Digital Forensics, Wireless
-   Security, Exploitation Concepts) — the remaining hands-on/conceptual
-   modules building on Module 26's lab.
-2. Reproduce Module 14's web lab against DVWA/Juice Shop/WebGoat directly,
-   in addition to the local from-scratch demonstration already included.
-3. Verify Module 07, 09, 12, 13, and 16's tool-dependent commands against
-   a real Kali VM + Metasploitable lab, and update `tests/TEST_LOG.md`
-   from "documentation-verified" to "live-tested" once done.
-4. Complete Modules 23–29 (CTF methodology through career guidance) once
-   the hands-on tool modules exist for them to build on.
+1. Complete Modules 23–25 (CTF methodology, vulnerability research,
+   reporting) — they build on the now-complete technical foundation.
+2. Complete Modules 27–29 (advanced workflows, final projects, career).
+3. Verify tool-dependent modules against a real Kali VM + Metasploitable.
+4. Expand Module 14 web labs with DVWA/Juice Shop alongside the existing
+   from-scratch local demonstration.
 
 ## Medium-Term
 
-- Populate `projects/` with the "Realistic Projects" progression described
-  in the course design (network discovery, traffic analysis, web app
-  assessment, capstone report).
-- Populate `video/course-map.md` with actual video numbers once video
-  production begins — the mapping template and required columns already
-  exist.
-- Expand `scripts/bash/` and `scripts/python/` with the remaining utilities
-  named in Modules 21/22 (network info collector, port monitor, HTTP header
-  analyzer, URL validator, DNS info tool, basic lab-only port scanner).
-
-## Long-Term
-
 - Community translations
-- A second full pass ("Beginner Review" and "Security Professional Review",
-  as described in the project's original design brief) once all modules are
-  content-complete
 - CI automation running `tests/validate_links.py` and
   `tests/validate_structure.py` on every pull request
+- A full "Beginner Review" pass once all modules are content-complete
 
 ## How to Help
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). Picking up a single scaffolded
-module and bringing it to the same standard as Module 01 or Module 08 is
-the single most useful contribution right now.
+See `CONTRIBUTING.md`. The most needed contributions right now are:
+Modules 23–25 and 27–29, and real-hardware verification of Modules 07,
+09, 12, 13, 16, 19, and 20.

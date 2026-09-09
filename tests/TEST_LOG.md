@@ -220,6 +220,35 @@ Kali-specific tools (`nmap`, Metasploit, Wireshark, etc.) installed.
   from this sandbox — flagged explicitly in the lesson rather than
   presented with fabricated example output.
 
+### Module 17 — Defensive Security
+- Commands that don't require systemd or a VM were verified:
+  `find / -perm -4000`, `find / -perm -0002`, `find / -newer <file>` all
+  executed and produced expected output. The defensive-context reuse of
+  `log_analyzer.sh` (Module 21's script) was confirmed working against the
+  same sample log already tested in Module 21.
+- `ufw`, `systemctl list-unit-files`, and `journalctl` are flagged as
+  documentation-only for this module (same sandbox limitations as Module 07).
+
+### Module 18 — Digital Forensics Fundamentals
+- All core commands were actually executed in the build sandbox:
+  - `file` on `/bin/bash` (ELF), `/etc/passwd` (ASCII text), a real shell
+    script (Bourne-Again shell script), a text file with a misleading name
+    (correctly identified as ASCII text not PDF) — exact output captured
+    and written into `01-concepts.md`
+  - `strings` on a fabricated binary — initial implementation using
+    shell-escaped `\x00` produced one-line output (a real bug caught by
+    running it); rebuilt using Python's `b'\x00'` bytes, which correctly
+    produces multi-line strings output — both the bug and the fix are
+    documented in this CHANGELOG entry
+  - `stat` on `/etc/passwd` — all four timestamp fields captured and shown
+    in the lesson exactly
+  - `sha256sum` integrity verification — same-file hash confirmed identical;
+    modified-file hash confirmed completely different — both tested
+  - `sha256sum` before/after comparison on the sample evidence dataset
+    confirmed that the analysis steps leave hashes unchanged
+- The `labs/digital-forensics/sample-evidence/` dataset was created and
+  every lab step run end-to-end before the lab was written up.
+
 ## NOT TESTED — REQUIRES A REAL ENVIRONMENT
 
 - **Any command requiring `ip`, `ss`, `ping`, `dig`, or internet-facing
@@ -239,6 +268,12 @@ Kali-specific tools (`nmap`, Metasploit, Wireshark, etc.) installed.
   build. This is flagged explicitly at the top of Module 07's
   `04-commands.md`. Verify against a real Kali VM before treating this
   module as fully tested.
+- **`aircrack-ng`, `airodump-ng`, `airmon-ng`, `iw` (Module 19)** — none
+  installed in sandbox, no wireless hardware present. Documented from
+  official aircrack-ng and 802.11 documentation.
+- **`msfconsole` / Metasploit Framework (Module 20)** — not installed in
+  sandbox, no Metasploitable VM available. Documented from official
+  Metasploit Unleashed documentation and Rapid7's Metasploitable guide.
 - **`john` (John the Ripper), `hashcat`, `bcrypt`, and `argon2` (Module 16)**
   — none are installed in this sandbox (confirmed directly: `pip show
   bcrypt` and a direct `import bcrypt`/`import dpkt`-style check both

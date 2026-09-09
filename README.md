@@ -19,9 +19,9 @@ This repository is a **real, working foundation**, not a finished
 
 - **Fully written**, following the course's complete lesson format (concepts,
   labs, commands, troubleshooting, security notes, exercises, challenge):
-  Modules **00–16, 21, 22, 26** — i.e. the entire **Linux Fundamentals**
+  Modules **00–22, 26** — i.e. the entire **Linux Fundamentals**
   track (00–07), **Networking** (08–09), **Security Fundamentals** (10),
-  **Reconnaissance through Password Security** (11–16), plus Automation
+  **Reconnaissance through Exploitation** (11–20), plus Automation
   and Lab-Building
 - **Scaffolded** (README + checkpoint structure in place, lesson files are
   placeholders): the remaining modules — tracked in [ROADMAP.md](ROADMAP.md)
@@ -70,10 +70,10 @@ Start at Module 00 regardless of level — it's short, and it sets the ground ru
 | 14 | [Web Security Fundamentals](modules/14-web-security-fundamentals/README.md) | ✅ Complete |
 | 15 | [Vulnerability Assessment](modules/15-vulnerability-assessment/README.md) | ✅ Complete |
 | 16 | [Authentication & Password Security](modules/16-authentication-and-passwords/README.md) | ✅ Complete |
-| 17 | [Defensive Security](modules/17-defensive-security/README.md) | 🚧 Scaffold |
-| 18 | [Digital Forensics Fundamentals](modules/18-digital-forensics-fundamentals/README.md) | 🚧 Scaffold |
-| 19 | [Wireless Security Concepts](modules/19-wireless-security-concepts/README.md) | 🚧 Scaffold |
-| 20 | [Exploitation Concepts in Safe Labs](modules/20-exploitation-concepts-safe-labs/README.md) | 🚧 Scaffold |
+| 17 | [Defensive Security](modules/17-defensive-security/README.md) | ✅ Complete |
+| 18 | [Digital Forensics Fundamentals](modules/18-digital-forensics-fundamentals/README.md) | ✅ Complete |
+| 19 | [Wireless Security Concepts](modules/19-wireless-security-concepts/README.md) | ✅ Complete |
+| 20 | [Exploitation Concepts in Safe Labs](modules/20-exploitation-concepts-safe-labs/README.md) | ✅ Complete |
 | 21 | [Automation with Bash](modules/21-automation-with-bash/README.md) | ✅ Complete |
 | 22 | [Security Automation with Python](modules/22-security-automation-with-python/README.md) | ✅ Complete |
 | 23 | [CTF & Practice Methodology](modules/23-ctf-and-practice-methodology/README.md) | 🚧 Scaffold |
