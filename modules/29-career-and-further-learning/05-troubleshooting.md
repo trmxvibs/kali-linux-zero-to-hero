@@ -1,14 +1,7 @@
-# Career & Further Learning — Troubleshooting
+# Troubleshooting — Module 29
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
+**Feeling overwhelmed by how much is left to learn** — this is normal and correct. Security is a field wide enough that no one knows all of it. Pick a direction from `01-concepts.md`, go deep in it, and the adjacent areas become accessible naturally.
 
-## Learning Objectives
+**Not sure which certification to pursue** — ask practitioners on LinkedIn or Reddit (r/netsec, r/AskNetsec) what they actually found useful in their field and location. Certification value varies significantly by geography and employer.
 
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
-
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+**Imposter syndrome** — if you've completed Modules 00–28 of this course, you know more than you did. That's the only bar that matters at this stage.

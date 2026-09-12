@@ -1,14 +1,9 @@
-# CTF & Practice Methodology — Troubleshooting
+# Troubleshooting — Module 23
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
+**Stuck on a challenge** — take a break (seriously, fresh eyes solve more challenges than persistence alone), re-read the challenge description for hints in the wording, and check whether the flag format gives you a clue about what to look for and where.
 
-## Learning Objectives
+**"I tried everything"** — you haven't; you've tried everything you currently know. This is the signal to research the category more specifically, not to try random tools harder.
 
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
+**Challenge gives an error when you connect** — confirm the challenge is still active on the platform (many CTF challenges have uptime issues); try again or try a different challenge in the same category.
 
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+**picoCTF challenges feel too easy / too hard** — that's the right signal; calibrate by trying the next difficulty level up or down. The goal is to be working at the edge of your knowledge, not comfortably inside it or completely lost.

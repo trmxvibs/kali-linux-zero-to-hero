@@ -1,46 +1,40 @@
 # Roadmap
 
-## Current State (this release)
+## Current State — v1.0 Complete
 
-**Fully written modules:** 00–22, 26 — the complete course from
-**Linux Fundamentals** (00–07) through **Networking** (08–09), **Security
-Fundamentals** (10), **Reconnaissance through Exploitation** (11–20),
-**Automation** (21–22), and **Lab-Building** (26). The entire core
-technical curriculum is now written. See `README.md` for the complete
-status table.
+**All 30 modules are now fully written.** This is the first complete version
+of the course — every module from 00 (Orientation) through 29 (Career &
+Further Learning) has its full lesson content, practical lab, commands
+reference, troubleshooting, security notes, exercises, and challenge.
 
-**Remaining scaffolds:** Modules 23–25 (CTF Methodology, Vulnerability
-Research, Reporting) and 27–29 (Advanced Workflows, Final Projects, Career
-Guidance) — structures in place, content pending.
+See `README.md` for the complete status table.
 
-**Tested:** see `tests/TEST_LOG.md`. Module 18's forensics commands
-(`file`, `strings`, `stat`, `sha256sum`) and the sample evidence dataset
-were fully live-tested. Notable not-live-tested areas: Module 07
-(`systemctl`/`cron`), Modules 08–09 (`ip`/`ping`/`dig`), Module 12
-(SMB/NFS/NSE), Module 13 (`tcpdump`/Wireshark), Module 16
-(`john`/`hashcat`/`bcrypt`), Module 19 (wireless hardware), Module 20
-(Metasploit/Metasploitable) — all flagged in their own lessons.
+**Tested:** see `tests/TEST_LOG.md` for the full inventory.
+- Commands actually executed and verified: Modules 01–06, 09 (nc-based),
+  10 (openssl), 12 (nc banner grab), 14 (sqli_demo.py, curl), 15
+  (vuln_lookup.py), 16 (hashing_demo.py), 17 (find-based commands), 18
+  (file/strings/stat/sha256sum against real sample evidence dataset)
+- Documentation-only (no live execution): Modules 07, 08/09 networking
+  commands, 12 (SMB/NSE), 13 (tcpdump/Wireshark), 16 (john/hashcat),
+  19 (wireless), 20 (Metasploit) — all clearly flagged in their lessons
 
-**Video:** not planned for the near term. See `video/README.md`.
+**Video:** not planned. See `video/README.md`.
 
-## Near-Term Priorities
+## Maintenance Priorities
 
-1. Complete Modules 23–25 (CTF methodology, vulnerability research,
-   reporting) — they build on the now-complete technical foundation.
-2. Complete Modules 27–29 (advanced workflows, final projects, career).
-3. Verify tool-dependent modules against a real Kali VM + Metasploitable.
-4. Expand Module 14 web labs with DVWA/Juice Shop alongside the existing
-   from-scratch local demonstration.
-
-## Medium-Term
-
-- Community translations
-- CI automation running `tests/validate_links.py` and
-  `tests/validate_structure.py` on every pull request
-- A full "Beginner Review" pass once all modules are content-complete
+1. **Live-test the documentation-only modules** against a real Kali VM +
+   Metasploitable lab — update `tests/TEST_LOG.md` from
+   "documentation-verified" to "live-tested" for each one.
+2. **Expand Module 14's web labs** with DVWA/Juice Shop alongside the
+   existing from-scratch SQLi demonstration.
+3. **CI automation** — run `tests/validate_links.py` and
+   `tests/validate_structure.py` on every pull request.
+4. **Community translations** — coordinate in issues before starting.
 
 ## How to Help
 
-See `CONTRIBUTING.md`. The most needed contributions right now are:
-Modules 23–25 and 27–29, and real-hardware verification of Modules 07,
-09, 12, 13, 16, 19, and 20.
+See `CONTRIBUTING.md`. The most useful contributions now:
+- Real-hardware verification of Modules 07, 09, 12, 13, 19, 20
+- New exercises or improved challenges for any module
+- Typo fixes and clarity improvements
+- New lab environments (DVWA, Juice Shop integration)

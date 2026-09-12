@@ -1,14 +1,5 @@
-# Reporting Security Findings — Security Notes
+# Security Notes — Module 25
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
-
-## Learning Objectives
-
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
-
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+- **Overclaiming impact damages credibility permanently.** If you report "critical — full system compromise possible" for a finding that is actually medium severity, and the client's technical team knows it, nothing else in your report will be trusted.
+- **Evidence handling is chain of custody.** Hash your screenshots, tool outputs, and packet captures before submission; keep originals; never modify evidence after collection. This applies to professional engagements and matters if findings are ever disputed.
+- **A report is the only artifact that survives the engagement.** The shell you opened, the handshake you captured, the enumeration output — all of it disappears when the lab is reset. The report is what the client retains, what gets fixed, and what proves the work was done.

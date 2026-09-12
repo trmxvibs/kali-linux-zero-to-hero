@@ -1,14 +1,21 @@
-# Final Practical Projects — Commands
+# Capstone Commands Reference
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
+All commands used in the capstone appear in earlier modules. This file is a quick-reference summary.
 
-## Learning Objectives
+```bash
+# Workspace
+mkdir -p ~/capstone/{scope,recon,evidence,findings,report}
 
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
+# Recon
+nmap -sV -T2 -oA ~/capstone/recon/scan <target>
 
-## Status
+# Enumeration
+enum4linux -a <target> > ~/capstone/recon/smb-enum.txt
+nmap --script=ftp-anon -p 21 <target>
 
-Not yet written. Tracked in `ROADMAP.md`.
+# Evidence integrity
+sha256sum ~/capstone/recon/* >> ~/capstone/evidence/hashes.txt
+
+# Report
+pandoc ~/capstone/report/final-report.md -o ~/capstone/report/final-report.pdf
+```

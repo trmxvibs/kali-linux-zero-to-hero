@@ -1,14 +1,7 @@
-# Final Practical Projects — Troubleshooting
+# Troubleshooting — Module 28
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
+**Feeling overwhelmed by the scope** — start with the workspace and the scope document; once those are clear, the rest follows the same steps you've already done in individual module labs.
 
-## Learning Objectives
+**Report feels incomplete** — go back to Module 25's checklist; most report gaps trace to missing evidence, unvalidated claims, or vague remediations.
 
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
-
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+**Not sure if a finding is real** — confirm it with the techniques from Module 15 (vulnerability lookup) and, if appropriate, Module 20 (controlled validation). An unconfirmed finding should be documented as "observed, not fully confirmed" with your reasons.

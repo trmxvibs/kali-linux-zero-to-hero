@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.0.0] — All 30 Modules Complete
+
+### Added
+- Fully written Modules 23–25 and 27–29: CTF Methodology, Vulnerability
+  Research Fundamentals, Reporting Security Findings, Advanced Kali
+  Workflows, Final Practical Projects, Career & Further Learning
+- Module 25 includes a complete finding template with Executive Summary,
+  all required sections, and a self-review checklist
+- Module 29 closes the course with honest career guidance, free resource
+  recommendations, and portfolio advice
+
+### Changed
+- README status table: all 30 modules now marked Complete
+- ROADMAP updated to v1.0 maintenance mode
+- Course status: first complete version of the full 30-module curriculum
+
 ## [0.7.0] — Defensive Security, Forensics, Wireless & Exploitation
 
 ### Added

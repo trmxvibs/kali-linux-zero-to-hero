@@ -1,14 +1,9 @@
-# Reporting Security Findings — Troubleshooting
+# Troubleshooting — Module 25
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
+**Severity feels arbitrary** — use CVSS v3.1's online calculator (first.org/cvss/calculator) with your specific finding; fill in each metric honestly and let the score inform your rating rather than starting from a gut feeling.
 
-## Learning Objectives
+**Can't reproduce a finding you found earlier** — this happens. If you can't reproduce it, you can't confirm it. Report it as "observed once, could not reproduce consistently" with your evidence from the original observation, rather than as a confirmed finding.
 
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
+**Finding is real but impact seems low** — report it anyway with an honest low severity; a chain of low-severity findings sometimes enables a high-impact attack path, and documented findings serve future audits even if not immediately actionable.
 
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+**Not sure what remediation to recommend** — research the CWE entry for this vulnerability type; CWE entries include a "Potential Mitigations" section that provides direct, credible remediation guidance.

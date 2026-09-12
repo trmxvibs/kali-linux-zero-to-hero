@@ -1,14 +1,6 @@
-# Reporting Security Findings — Exercises
+# Exercises — Module 25
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
-
-## Learning Objectives
-
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
-
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+1. Complete Lab 25's full finding report and review it against the self-review checklist.
+2. Rewrite the title of five poorly-named hypothetical findings — e.g. "SQL injection" → "SQL Injection in /search?q= parameter, unauthenticated, returns full database contents."
+3. Explain, in your own words, why "fix the vulnerability" is not an acceptable remediation recommendation.
+4. Write the executive summary for a fictional engagement that found: one critical finding, two medium findings, and one informational note — in three sentences or fewer, no jargon.

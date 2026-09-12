@@ -1,14 +1,26 @@
-# Final Practical Projects — Practical Lab
+# Lab 28 — Capstone Project A: Full Network Assessment
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
+**Environment:** Kali VM + Metasploitable 2 VM (Module 26, fully isolated).
 
-## Learning Objectives
+## Instructions
 
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
+1. Create a workspace following Module 27's structure.
+2. Define your scope in writing: the Metasploitable VM's IP, the authorized techniques, and explicitly what is OUT of scope (your host machine, your home network, anything outside the isolated lab).
+3. Execute the full workflow from `01-concepts.md` in order — do not skip steps.
+4. At the end, produce a complete report following Module 25's template, with at least three documented findings.
 
-## Status
+## Minimum Report Contents
 
-Not yet written. Tracked in `ROADMAP.md`.
+- Executive Summary (one paragraph)
+- Scope and Methodology
+- At least three findings (vsftpd, SMB, one of your choice) in full template format
+- Evidence for each finding (hashed)
+- Conclusion with top three recommended remediations
+
+## Self-Review
+
+Apply Module 25's self-review checklist before considering it complete. If any item fails, fix the report before moving on.
+
+## Next Step
+
+[Module 29 — Career & Further Learning](../29-career-and-further-learning/README.md)

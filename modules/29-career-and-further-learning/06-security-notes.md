@@ -1,14 +1,7 @@
-# Career & Further Learning — Security Notes
+# Final Security Note — Module 29
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
+Everything in this course was built around one principle: the skills of security work are inseparable from the ethics of security work.
 
-## Learning Objectives
+The techniques in Modules 11–20 exist to make systems safer. Used without authorization, without scope, without responsibility — they cause harm instead. The technical skill is identical either way; the authorization and intent are what determine whether the work is valuable or harmful.
 
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
-
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+You've learned how attackers think because that's how defenders think too. Use it accordingly.

@@ -1,14 +1,5 @@
-# CTF & Practice Methodology — Exercises
+# Exercises — Module 23
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
-
-## Learning Objectives
-
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
-
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+1. Complete at least one challenge each from two different CTF categories on picoCTF, and write a one-paragraph mini write-up for each.
+2. Read one write-up (from CTFtime.org or a blog) for a challenge you did NOT solve, and identify one technique it used that you hadn't encountered before.
+3. Map the write-up's technique to its relevant module in this course — if it used a technique not covered, note it as a future learning direction.

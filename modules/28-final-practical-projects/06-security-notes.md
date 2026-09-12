@@ -1,14 +1,4 @@
-# Final Practical Projects — Security Notes
+# Security Notes — Module 28
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
-
-## Learning Objectives
-
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
-
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+- This is still a lab exercise against Metasploitable 2 — every Module 00 and Module 20 rule still applies. The scope is your isolated lab. No exceptions at the capstone stage.
+- A capstone report that documents what you found AND what you did NOT test is more credible than one claiming comprehensive coverage it didn't actually achieve.

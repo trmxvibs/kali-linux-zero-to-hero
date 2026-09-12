@@ -1,14 +1,11 @@
-# Advanced Kali Workflows — Challenge
+# Challenge — Module 27
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
+Automate your entire Module 11–15 workflow into a single script:
+- Takes a target IP as an argument
+- Creates a timestamped workspace directory
+- Runs conservative nmap (initial, then service scan)
+- Runs enum4linux if SMB is detected
+- Hashes all output
+- Prints a summary: discovered services, notable findings, evidence hashes
 
-## Learning Objectives
-
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
-
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+This is a real, useful tool — the kind security professionals actually build and reuse across engagements.

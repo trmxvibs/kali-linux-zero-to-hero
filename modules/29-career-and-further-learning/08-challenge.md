@@ -1,14 +1,7 @@
-# Career & Further Learning — Challenge
+# Final Challenge — Module 29
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
+No challenge is required here — the challenge for Module 29 is everything you do with what you've learned, starting now.
 
-## Learning Objectives
+The most useful thing you can do from this point is: work on something real, document it honestly, share it openly, and keep learning.
 
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
-
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+This repository will be here when you want to revisit, contribute, or send someone else to the beginning.

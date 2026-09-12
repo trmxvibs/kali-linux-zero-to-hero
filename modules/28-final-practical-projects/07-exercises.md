@@ -1,14 +1,3 @@
-# Final Practical Projects — Exercises
+# Exercises — Module 28
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
-
-## Learning Objectives
-
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
-
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+Complete at least one of the three capstone projects from `01-concepts.md`. The minimum viable deliverable is Project A with a complete report.

@@ -1,14 +1,15 @@
-# Career & Further Learning — Commands
+# Tools for Continued Learning
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
+```bash
+# Update Kali and all tools regularly (Module 06)
+sudo apt update && sudo apt full-upgrade -y
 
-## Learning Objectives
+# Keep the HackTheBox VPN connection alive
+sudo openvpn ~/hackthebox.ovpn
 
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
+# Clone a CTF write-up repo to study technique
+git clone https://github.com/ctf-team/write-ups
 
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+# Check your own skill gaps with a quick nmap/enumeration on a fresh HTB machine
+nmap -sV -T2 <htb-machine-ip>
+```

@@ -1,14 +1,5 @@
-# Advanced Kali Workflows — Exercises
+# Exercises — Module 27
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
-
-## Learning Objectives
-
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
-
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+1. Complete Lab 27 and produce a workspace that fully documents a simulated engagement against your Metasploitable VM.
+2. Write a one-line command that uses `nmap -oG` output and `awk` to extract all hosts with port 22 open.
+3. Start a `tmux` session, run a long nmap scan inside it, detach, close the terminal, reopen it, and re-attach — confirming the scan continued in your absence.

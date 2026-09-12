@@ -15,7 +15,6 @@ By the end of this module you should be able to:
 | File | Purpose |
 |---|---|
 | [01-concepts.md](01-concepts.md) | Core theory, explained in plain language first |
-| [02-installation.md](02-installation.md) | Any setup/installation needed for this module |
 | [03-practical-lab.md](03-practical-lab.md) | Hands-on, reproducible lab |
 | [04-commands.md](04-commands.md) | Command/tool reference with explanations |
 | [05-troubleshooting.md](05-troubleshooting.md) | Fixes for common problems |

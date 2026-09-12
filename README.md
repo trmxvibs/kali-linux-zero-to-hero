@@ -19,9 +19,9 @@ This repository is a **real, working foundation**, not a finished
 
 - **Fully written**, following the course's complete lesson format (concepts,
   labs, commands, troubleshooting, security notes, exercises, challenge):
-  Modules **00–22, 26** — i.e. the entire **Linux Fundamentals**
+  Modules **00–29** — all 30 modules — i.e. the entire **Linux Fundamentals**
   track (00–07), **Networking** (08–09), **Security Fundamentals** (10),
-  **Reconnaissance through Exploitation** (11–20), plus Automation
+  **Reconnaissance through Career Guidance** (11–29), plus Automation
   and Lab-Building
 - **Scaffolded** (README + checkpoint structure in place, lesson files are
   placeholders): the remaining modules — tracked in [ROADMAP.md](ROADMAP.md)
@@ -76,13 +76,13 @@ Start at Module 00 regardless of level — it's short, and it sets the ground ru
 | 20 | [Exploitation Concepts in Safe Labs](modules/20-exploitation-concepts-safe-labs/README.md) | ✅ Complete |
 | 21 | [Automation with Bash](modules/21-automation-with-bash/README.md) | ✅ Complete |
 | 22 | [Security Automation with Python](modules/22-security-automation-with-python/README.md) | ✅ Complete |
-| 23 | [CTF & Practice Methodology](modules/23-ctf-and-practice-methodology/README.md) | 🚧 Scaffold |
-| 24 | [Vulnerability Research Fundamentals](modules/24-vulnerability-research-fundamentals/README.md) | 🚧 Scaffold |
-| 25 | [Reporting Security Findings](modules/25-reporting-security-findings/README.md) | 🚧 Scaffold |
+| 23 | [CTF & Practice Methodology](modules/23-ctf-and-practice-methodology/README.md) | ✅ Complete |
+| 24 | [Vulnerability Research Fundamentals](modules/24-vulnerability-research-fundamentals/README.md) | ✅ Complete |
+| 25 | [Reporting Security Findings](modules/25-reporting-security-findings/README.md) | ✅ Complete |
 | 26 | [Building Your Own Security Lab](modules/26-building-your-own-lab/README.md) | ✅ Complete |
-| 27 | [Advanced Kali Workflows](modules/27-advanced-kali-workflows/README.md) | 🚧 Scaffold |
-| 28 | [Final Practical Projects](modules/28-final-practical-projects/README.md) | 🚧 Scaffold |
-| 29 | [Career & Further Learning](modules/29-career-and-further-learning/README.md) | 🚧 Scaffold |
+| 27 | [Advanced Kali Workflows](modules/27-advanced-kali-workflows/README.md) | ✅ Complete |
+| 28 | [Final Practical Projects](modules/28-final-practical-projects/README.md) | ✅ Complete |
+| 29 | [Career & Further Learning](modules/29-career-and-further-learning/README.md) | ✅ Complete |
 
 ## Repository Structure
 

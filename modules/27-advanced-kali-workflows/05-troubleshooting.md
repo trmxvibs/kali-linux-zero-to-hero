@@ -1,14 +1,7 @@
-# Advanced Kali Workflows — Troubleshooting
+# Troubleshooting — Module 27
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
+**Nmap `-oA` produces three files but I only see one** — the flag creates three files with the same base name and different extensions (`.nmap`, `.gnmap`, `.xml`); check with `ls output.*`.
 
-## Learning Objectives
+**tmux session lost after terminal closed** — if you detached (`Ctrl+B d`) before closing, `tmux attach` recovers it; if you closed without detaching, the session is gone. Use `Ctrl+B d` before closing any terminal running a long scan.
 
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
-
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+**Workspace getting disorganised mid-engagement** — stop and reorganise before continuing; a messy evidence directory mid-engagement compounds into a messy report. Five minutes of organising now saves an hour of reconstruction later.

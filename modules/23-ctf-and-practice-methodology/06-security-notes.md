@@ -1,14 +1,5 @@
-# CTF & Practice Methodology — Security Notes
+# Security Notes — Module 23
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
-
-## Learning Objectives
-
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
-
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+- CTF platforms are explicitly authorized practice environments — everything on picoCTF, HackTheBox, TryHackMe is intentionally built to be attacked, with no real users, real data, or real systems at stake. This is one of very few places in security where "try everything and see what happens" is genuinely appropriate.
+- **Write-up culture is one of the best things about the CTF community.** Reading how other people solved the same challenge after you've attempted it (or after the competition ends) is a reliable way to learn techniques you'd never have discovered alone — and writing your own write-ups builds the documentation habit Module 25 formalizes.
+- **Don't confuse CTF skills with real assessment methodology.** CTF flags are guaranteed to exist and findable by design; real assessments are open-ended. CTF exploitation is against intentionally vulnerable, consequence-free targets; real exploitation (in authorized work) has scope, rules of engagement, and professional obligations (Module 25).

@@ -1,14 +1,35 @@
-# Reporting Security Findings — Commands
+# Lesson 25.2 — Report Generation Helpers
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
+## Markdown-based report template (version-controlled, diffable)
 
-## Learning Objectives
+A plain Markdown file is the most portable, version-controllable format for security findings. The template from `01-concepts.md` works directly as a `.md` file.
 
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
+```bash
+cp modules/25-reporting-security-findings/finding-template.md ~/findings/finding-001.md
+```
 
-## Status
+## Screenshot capture on Kali
 
-Not yet written. Tracked in `ROADMAP.md`.
+```bash
+scrot -s ~/evidence/screenshot.png    # -s = interactive region selection
+```
+
+## Hashing evidence before including it
+
+```bash
+sha256sum evidence/* | tee evidence/hashes.txt    # hash everything and save the manifest
+```
+
+## Generating a PDF from Markdown (if needed for delivery)
+
+```bash
+# Requires pandoc: sudo apt install pandoc
+pandoc finding.md -o finding.pdf
+```
+
+## Archiving a complete finding package
+
+```bash
+tar -czvf finding-001-package.tar.gz ~/findings/finding-001/ ~/evidence/
+sha256sum finding-001-package.tar.gz   # hash the package itself for chain of custody
+```

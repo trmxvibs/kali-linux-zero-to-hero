@@ -1,14 +1,5 @@
-# Career & Further Learning — Exercises
+# Final Exercises — Module 29
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
-
-## Learning Objectives
-
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
-
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+1. Complete Lab 29's personal development plan.
+2. Make at least one contribution to this repository — even a small one. The skill of reading, understanding, and improving someone else's documentation is genuinely valuable.
+3. Revisit the goal you wrote at the start of Module 00 ("what do I want to be able to do after this course?"). Can you do it now? If not, what specifically remains?

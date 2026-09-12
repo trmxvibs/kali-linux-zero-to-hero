@@ -1,14 +1,5 @@
-# Advanced Kali Workflows — Security Notes
+# Security Notes — Module 27
 
-> ⚠️ **Scaffold notice:** This file is a structural placeholder in the current release.
-> It follows the course's standard lesson format (see `CONTRIBUTING.md`) but has not yet
-> been filled in with full lesson content. Contributions are welcome — see
-> `CONTRIBUTING.md` for how to write a lesson in the required format.
-
-## Learning Objectives
-
-- TBD — to be written following the Lesson Format in `CONTRIBUTING.md`
-
-## Status
-
-Not yet written. Tracked in `ROADMAP.md`.
+- **Output files are evidence.** Apply the same hash-before-sharing discipline from Module 18 and Module 25 to every nmap output, tool log, and screenshot you create during an engagement.
+- **`-oG` (greppable) output is particularly useful for scripting** — it's specifically designed to be parsed by subsequent commands, which is why Modules 21/22's automation skills compound with this module's chaining techniques.
+- **Scope document goes in the workspace first, everything else after.** An engagement without a documented scope is an engagement that can drift out of authorized bounds without you noticing.
